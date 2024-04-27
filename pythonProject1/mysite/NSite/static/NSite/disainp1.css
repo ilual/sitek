@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: system-ui;
+  background: rgb(31,203,198);
+  background: linear-gradient(90deg, rgba(31,203,198,1) 15%, rgba(0,121,255,1) 71%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background-color: #0a5b8a;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+main h1{
+	text-align: center;
+	font-family: Tahoma;
+}

@@ -1,0 +1,147 @@
+/* Общие стили для всего сайта */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: system-ui;
+  background: rgb(31,203,198);
+  background: linear-gradient(90deg, rgba(31,203,198,1) 15%, rgba(0,121,255,1) 71%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #0a5b8a;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #0a5b8a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+.project a {
+	text-decoration: none;
+	color: #192D70;
+}
+
+/* Стили для блока проекта */
+.project {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.project img {
+  width: 100%;
+}
+.idKvant{
+  text-align: center;
+  font-family: Tahoma;
+  text-transform: uppercase;
+}
+
+/* CSS для широких экранов */
+@media (min-width: 1200px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    padding: 20px 0;
+  }
+  nav ul li {
+    margin: 0 20px;
+  }
+  main {
+    padding: 50px;
+  }
+  footer {
+    padding: 20px;
+  }
+  .project {
+    padding: 20px;
+  }
+}
+.dropdown {
+  position: relative;
+  display: inline-block; /* Добавляем inline-block, чтобы кнопка была под кнопкой */
+}
+
+/* Кнопка выпадающего списка */
+..dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Стили для выпадающего списка */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgb(31, 203, 198);
+  background: linear-gradient(90deg, rgba(31, 203, 198, 1) 15%, rgba(0, 121, 255, 1) 71%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%; 
+  left: 50%; /* Позиционируем по центру по горизонтали */
+  transform: translateX(-50%); /* Используем transform, чтобы сдвинуть влево на половину ширины */
+}
+
+/* Указываем стили для ссылок внутри выпадающего списка */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Добавляем стили при наведении на ссылки в выпадающем меню */
+.dropdown-content a:hover {
+  background: rgb(203, 140, 31);
+  background: linear-gradient(90deg, rgba(203, 140, 31, 1) 56%, rgba(255, 0, 35, 1) 85%);
+}
+
+/* Отображаем выпадающее меню при наведении на кнопку */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
